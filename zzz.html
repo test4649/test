@@ -1,0 +1,26 @@
+<html>
+<body>
+test
+
+<script type="text/javascript">
+var aa = {
+    'v': {'ryoiki_eng':'r_business', 'ch_eng':'recruit'}
+};
+if (window.aa && aa.v && aa.v.ryoiki_eng) {
+  var attr = aa.v.ryoiki_eng + '=true';
+  if (aa.v.ch_eng)
+    attr += '|' + aa.v.ch_eng + '=true'
+
+  var url = ('https:' == document.location.protocol ? 'https://ssl.socdm.com' : 'http://tg.socdm.com')
+    + '/attr/v1?aid=scaleout&sid=allabout&attr=' + encodeURIComponent(attr);
+
+  document.write('<img src="'+url+'" width="1" height="1" style="position:absolute;border:none;padding:0;margin:0;"/>');
+}
+</script>
+
+
+aaa
+
+
+
+</body></html>
